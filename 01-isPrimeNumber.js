@@ -18,16 +18,16 @@ isPrimeNumber(67);
 */
 
 var isPrimeNumber = function(num) {
-  // YOUR CODE HERE
+  // Group Sourced Solution
+  for (var i = 2; i <= (num - 1); i++ ) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
 };
 
 // // Uncomment and copy into Chrome dev console to test your function! (One line at a time!)
-// console.log(isPrimeNumber(2)); // true
-// console.log(isPrimeNumber(60)); // false
-// console.log(isPrimeNumber(611953)); // true
-
-
-var isPrimeNumber = function(num) {
-  return true
-};
-
+console.log(isPrimeNumber(2)); // true
+console.log(isPrimeNumber(60)); // false
+console.log(isPrimeNumber(611953)); // true
