@@ -54,9 +54,9 @@ You'll get 30 minutes to solve the problem (or attempt solving it!) then we'll l
 - Checkout your master branch `git checkout master`
 - Then pull down the latest changes using `git pull`
 
-10. **Now Open your favorite text editor and try and solve the problem!**
+10. **Be sure to change to a new branch `git checkout -b your-branch-name`**
 
-11. **Be sure to change to a new branch `git checkout -b your-branch-name`**
+11. **Now Open your favorite text editor and ~~try to~~ solve the problem!**
 
 -  Push your changes back up to github!
   - `git add <filename>`
