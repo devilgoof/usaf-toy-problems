@@ -61,6 +61,6 @@ You'll get 30 minutes to solve the problem (or attempt solving it!) then we'll l
 -  Push your changes back up to github!
   - `git add <filename>`
   - `git commit <filename> -m "commit message here"`
-  - **`git push origin your-branch-name`**
+  - **`git push origin HEAD`**
 
 Good luck!
