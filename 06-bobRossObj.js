@@ -57,7 +57,7 @@ const person = {
       firstName: 'Steve',
       lastName: 'Ross',
       age: '35',
-      favoriteThings: ['Yodeling', 'Kareoke'],
+      favoriteThings: ['Yodeling', 'Karaoke'],
       children: [],
       birthday() {
         return ++this.age;
@@ -81,18 +81,25 @@ const person = {
 console.log(`His name is ${person.firstName} ${person.lastName}`);
 
 // Access 'Happy accidents' from Bob's favorite things.
+console.log(person.favoriteThings[1])
 
 // Run Bob Ross' greet method.
+console.log(person.greet("Ash"))
 
 // Access Morgan Ross's age.
+console.log(person.children[0].age)
 
 // Access 'Singing' from Morgan's favorite things.
+console.log(person.children[0].favoriteThings[1])
 
 // Run Morgan's Birthday method.
+console.log(person.children[0].birthday())
 
 // Access 'Rain Dancing' from Todd Ross' favorite things.
+console.log(person.children[0].children[0].favoriteThings[0])
 
 // Run Doug Ross' Greet method.
+console.log(person.children[0].children[1].greet("Mitchell"))
 
 // BONUS HARD MODE
 
@@ -104,11 +111,25 @@ console.log(`His name is ${person.firstName} ${person.lastName}`);
 
 // Access Bob Ross's name (freebie!)
 // const { firstName, lastName } = person
-// console.log(firstName, lastName) // logs "Bob Ross"
+const { firstName, lastName } = person
+console.log(firstName, lastName) // logs "Bob Ross"
+
+// Access Bob's age
+// const { age } = person
+// console.log(age)
 
 // Access 'Happy accidents' from Bob's favorite things.
+const { favoriteThings: [, two] } = person
+console.log(two)
 
 // Access Morgan Ross's age.
+const { children: [ { age } ] } = person
+// To get Steve's age:
+// const { children: [ , { age } ] } = person
+
+// To store children's names
+const [ morgan, steve ] = person.children
+console.log(morgan)
 
 // Access 'Singing' from Morgan's favorite things.
 
