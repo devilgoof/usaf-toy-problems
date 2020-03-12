@@ -19,16 +19,7 @@ const joinArrays = (arr1, arr2, arr3) => {
 };
 
 
-// 3. Given an array and a index, return an array with all the elements up until, but not including, the element at the given index.
-// getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3)
-// --> ['a', 'b', 'c']
-
-const getElementsUpTo = (array, index) => {
-  // your code here
-};
-
-
-// 4. Given an array and an index, return an array with all the elements but the nth.
+// 3. Given an array and an index, return an array with all the elements but the nth.
 // getAllElementsButNth(['a', 'b', 'c'], 1);
 // --> ['a', 'c']
 
@@ -37,7 +28,7 @@ const getAllElementsButNth = (array, index) => {
 };
 
 
-// 5. Given an array of strings, return an array containing only the elements of the given array whose lengths are odd numbers.
+// 4. Given an array of strings, return an array containing only the elements of the given array whose lengths are odd numbers.
 // filterOddLengthWords(['there', 'it', 'is', 'now']);
 // --> ['there', "now']
 
@@ -46,7 +37,7 @@ const filterOddLengthWords = (array) => {
 };
 
 
-// 6. Given an array of numbers, return a new array where each element is the square of the element of the given array.
+// 5. Given an array of numbers, return a new array where each element is the square of the element of the given array.
 // squareElements([1, 2, 3]);
 // --> [1, 4, 9]
 
