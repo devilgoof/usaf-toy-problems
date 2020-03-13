@@ -3,7 +3,7 @@
 // --> 14
 
 const getLengthOfThreeWords = (string1, string2, string3) => {
-  // your code here
+  return string1.length + string2.length + string3.length 
 };
 
 
@@ -12,7 +12,7 @@ const getLengthOfThreeWords = (string1, string2, string3) => {
 // --> ['R', 'a', 'd', 'a', 'g', 'a', 's', 't']
 
 const getAllLetters = (string) => {
-  // your code here
+  return string.split('');
 };
 
 
@@ -21,7 +21,7 @@ const getAllLetters = (string) => {
 // --> ['Radagast', 'the', 'Brown']
 
 const getAllWords = (string) => {
-  // your code here
+  return string.trim().split(" ")
 };
 
 
@@ -30,8 +30,15 @@ const getAllWords = (string) => {
 // getLongestElement(['one', 'two', 'three']);
 // --> 'three'
 
+var length = 0
+var longest;
 const getLongestElement = (array) => {
-  // your code here
+  for(var i=0; i < array.length; i++){
+    if(array[i].length > length){
+    var length = array[i].length;
+    longest = array[i];
+    }
+  }
 };
 
 
